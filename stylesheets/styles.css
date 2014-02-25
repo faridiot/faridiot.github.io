@@ -6,9 +6,12 @@ body {
   color:#777;
   font-weight:300;
   overflow-x:hidden;
-  background-color: #f1f5fe;
-  background: transparent url(https://pbs.twimg.com/profile_background_images/378800000182511598/ZYbRyxg-.jpeg) 0 0px no-repeat;
-
+      background-image: url(https://pbs.twimg.com/profile_background_images/378800000182511598/ZYbRyxg-.jpeg);
+      background-position: left 40px;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      background-repeat: no-repeat;
+      background-color: #F1F5FE;
 }
 
 h1, h2, h3, h4, h5, h6 {
