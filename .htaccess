@@ -3,21 +3,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
 RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ /$1/$2/$3.html
-
-<IfModule mod_expires.c>
-# Enable expirations
-ExpiresActive On 
-# Default directive
-ExpiresDefault "access plus 2 days"
-# My favicon
-ExpiresByType image/x-icon "access plus 2 days"
-# Images
-ExpiresByType image/gif "access plus 2 days"
-ExpiresByType image/png "access plus 2 days"
-ExpiresByType image/jpg "access plus 2 days"
-ExpiresByType image/jpeg "access plus 2 days"
-# CSS
-ExpiresByType text/css "access 2 days"
-# Javascript
-ExpiresByType application/javascript "access plus 2 days"
-</IfModule>
