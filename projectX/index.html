@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Warnai Duniamu</title>
+
+    <!-- // IOS webapp icons // -->
+    
+    <meta name="apple-mobile-web-app-title" content="Karma Webapp">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/mobile/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/mobile/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/mobile/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/mobile/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/mobile/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="images/favicons/favicon1.ico" />
+    
+    <!-- // IOS webapp splash screens // -->
+    
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+          href="../../../../images/mobile/apple-touch-startup-image-1536x2008.html"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+          href="../../../../images/mobile/apple-touch-startup-image-1496x2048.html"/>     
+ 	<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)"
+          href="../../../../images/mobile/apple-touch-startup-image-768x1004.html"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)"
+          href="../../../../images/mobile/apple-touch-startup-image-748x1024.html"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" 
+          href="../../../../images/mobile/apple-touch-startup-image-640x1096.html"/>    
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
+          href="../../../../images/mobile/apple-touch-startup-image-640x920.html"/>    
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)"
+          href="../../../../images/mobile/apple-touch-startup-image-320x460.html"/>    
+    
+    <!-- // Windows 8 tile // -->
+    
+    <meta name="application-name" content="Jogja +F Labs Experiments">
+    <meta name="msapplication-TileColor" content="#333333" />
+	<meta name="msapplication-TileImage" content="images/mobile/windows8-icon.html" />
+
+    <!-- // Handheld devices misc // -->
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true"/>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    
+    <!-- // Stylesheets // -->
+    
+    <link rel="stylesheet" href="../bootstrap/core/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/select2/select2.css"/>
+    <link rel="stylesheet" href="../bootstrap/datepicker/css/datepicker.css"/>
+    <link rel="stylesheet" href="../bootstrap/fileupload/bootstrap-fileupload.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/typeahead/typeahead.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/colorpicker/css/colorpicker.css"/>
+    <link rel="stylesheet" href="../bootstrap/timepicker/css/bootstrap-timepicker.min.css"/>
+    <link rel="stylesheet" href="../fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-custom.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-extended.css"/>
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/base.min.css"/>
+    <link rel="stylesheet" href="../css/light-theme.css"/>
+    <link rel="stylesheet" href="../css/mediaqueries.css"/>
+    <link rel="stylesheet" href="../css/responsivegallery.css"/>
+    
+    <!-- // Helpers // -->
+    
+    <script src="js/plugins/modernizr.min.js"></script> 
+    <script src="js/plugins/mobiledevices.js"></script>
+    
+    <!-- // jQuery core // -->
+    
+    <script src="js/libs/jquery-1.11.0.min.js"></script>
+    <script src="js/libs/jquery-ui-1.10.4.min.js"></script>
+    
+    <!-- // Bootstrap // -->
+    
+    <script src="bootstrap/core/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/select2/select2.min.js"></script>
+	<script src="bootstrap/bootboxjs/bootboxjs.min.js"></script>
+    <script src="bootstrap/holder/holder.min.js"></script>
+    <script src="bootstrap/typeahead/typeahead.min.js"></script>
+	<script src="bootstrap/datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="bootstrap/fileupload/bootstrap-fileupload.min.js"></script>
+	<script src="bootstrap/inputmask/bootstrap-inputmask.min.js"></script>
+    <script src="bootstrap/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="bootstrap/timepicker/js/bootstrap-timepicker.min.js"></script>
+    
+    <!-- // Custom/premium plugins // -->
+    
+    <script src="js/plugins/responsivetables.1.0.min.js"></script> 
+    <script src="js/plugins/responsivehelper.1.0.min.js"></script>  
+    <script src="js/plugins/mainmenu.1.0.min.js"></script>
+    <script src="js/plugins/easyfiletree.1.0.min.js"></script> 
+  	<script src="js/plugins/autosaveforms.1.0.min.js"></script> 
+    <script src="js/plugins/chainedinputs.1.0.min.js"></script>
+	<script src="js/plugins/checkboxtoggle.1.0.min.js"></script> 
+    <script src="js/plugins/bootstraptabsextend.1.0.min.js"></script>
+    <script src="js/plugins/lockscreen.1.0.min.js"></script>
+    <script src="js/plugins/autoexpand.1.0.min.js"></script>
+    <script src="js/plugins/notify.1.0.min.js"></script>
+ 	<script src="js/plugins/nanogress.1.0.min.js"></script>
+    <script src="js/plugins/powerwizard.1.0.min.js"></script>
+    <script src="js/plugins/simpleselect.1.0.min.js"></script>
+    <script src="js/plugins/tinycontextmenu.1.0.min.js"></script>
+      
+    <!-- // Third-party plugins // -->
+    
+    <script src="js/plugins/tinyscrollbar.min.js"></script>  
+    <script src="js/plugins/jquery.knob.js"></script> 
+    <script src="js/plugins/prism.min.js"></script>            
+    <script src="js/plugins/h5f.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="js/plugins/gmap3.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.widgets.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.pager.min.js"></script>
+    <script src="js/plugins/fullcalendar.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="js/plugins/hogan-2.0.0.js"></script>
+    <script src="js/plugins/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/jquery.autosize-min.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/jquery.pwstrength.min.js"></script>
+    <script src="js/plugins/jquery.mixitup.min.js"></script>
+    <script src="js/plugins/jquery.vticker.min.js"></script>
+    <script src="js/flot/jquery.flot.min.js"></script>
+    <script src="js/flot/jquery.flot.resize.min.js"></script>
+    <script src="js/flot/excanvas.min.js"></script>
+    <script src="js/plugins/layout.min.js"></script>
+    <script src="js/plugins/masonry.pkgd.min.js"></script>
+    <script src="js/plugins/json2.js"></script>
+    <script src="js/countup/jquery.countTo.js"></script>
+    
+    <!-- // Custom //-->
+    
+    <script src="js/plugins/theme-demo.min.js"></script>    
+     
+</head>
+<body> 
+	<div id="container" class="clearfix">
+
+    <!-- ******************************************** 
+         * SIDEBAR MAIN:                            *
+         *                                          *
+         * the part which contains the main         *
+         * navigation, logo, search and more...     *
+         * (parts can be in both sidebars).         *
+         ******************************************** -->
+                   
+		<aside id="sidebar-main" class="sidebar">
+            
+        	<div class="sidebar-logo">
+            	<a href="index.html" id="logo-big"><h1>admin</h1><h2>/faridiot.com</h2></a>
+            </div><!-- End .sidebar-logo -->
+
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module"> 
+                <div class="sidebar-profile">
+                    <img src="images/users/user-1.jpg" alt="" class="avatar"/>
+                    <span class="indicator-dot">2</span>
+                    <ul class="sidebar-profile-list">
+                        <li><h3>Hi, A. Farid Mubarok</h3></li>
+                        <li><a href="#">Profile</a>  | <a href="#">Mail</a> | <a href="#">Logout</a></li>
+                    </ul>
+                </div><!-- End .sidebar-profile -->
+            </div><!-- End .sidebar-module --> 
+                    
+            <div class="sidebar-line"><!-- A seperator line --></div>
+            
+            <!-- * Tabs can be removed, if so dont forget * -->
+            <!-- * to remove the .tab-pane divs(wrapper). * -->
+             
+            <ul class="ext-tabs-sidebar">
+                <li class="active">
+                    <a href="#sidebar-tab-1"><i class="fa fa-bars"></i> Navigation</a>
+                </li>
+                <li>
+                    <a href="#sidebar-tab-2"><i class="fa fa-youtube-play"></i> Videos</a>
+                </li>            
+            </ul><!-- End .ext-tabs-sidebar -->
+            <div class="tab-content">
+                <div id="sidebar-tab-1" class="tab-pane active clearfix">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+                    
+                    <div class="sidebar-module"> 
+                        <nav class="sidebar-nav-v2">                         
+                            <ul>
+                                <li class="page-arrow active-page">
+                                    <a href="index.html"><i class="fa fa-dashboard"></i> Dashboard <span class="indicator-pill">32</span></a>
+                                </li>
+                                <li>
+                                    <a href="showcase.html"><i class="fa fa-github-alt"></i> Showcase Our Work</a>
+                                </li>
+                                <li>
+                                    <a href="statistics.html"><i class="fa fa-sun-o"></i> Statistics<span class="indicator-dot">2</span></a>
+                                </li>
+                                <li>
+                                    <a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
+                                </li>             
+                                <li>
+                                    <a href="wizard.html"><i class="fa fa-envelope-o"></i> Form Wizard </a>
+                                </li>
+                                <li>
+                                    <a href="comments.html"><i class="fa  fa-comment-o"></i> Comments</a>
+                                </li>
+                                <li>
+                                    <a href="ticketsupport.html"><i class="fa fa-stack-overflow "></i> Ticket Support</a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html"><i class="fa  fa-circle-o"></i> Timeline</a>
+                                </li>
+                                <li>
+                                    <a href="wiki.html"><i class="fa  fa-bookmark-o"></i> Wiki</a>
+                                </li>
+                                <li class="seperator"><!-- * seperator line * --></li>
+                                <li>
+                                    <a href="media.html"><i class="fa fa-picture-o"></i> Media</a>
+                                </li>                
+                                <li>
+                                    <a href="tables.html"><i class="fa fa-table"></i> Rendering Engine</a>
+                                </li>
+                                <li>
+                                    <a href="calendar.html"><i class="fa fa-calendar-o"></i> Calendar</a>
+                                </li>    
+                                <li>
+                                    <a href="planning.html"><i class="fa  fa-check-square-o"></i> Planning</a>
+                                </li>
+                                <li>
+                                    <a href="maps.html"><i class="fa fa-map-marker"></i> Maps</a>
+                                </li> 
+                                <li>
+                                    <a href="sitemap.html"><i class="fa fa-sitemap"></i> Sitemap</a>
+                                </li>                                                                                                                   
+                            </ul>
+                        </nav><!-- End .sidebar-nav-v1 --> 
+             		</div><!-- End .sidebar-module -->                                     
+                </div>                
+            	<div id="sidebar-tab-2" class="tab-pane clearfix">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+	                        
+                    <div class="sidebar-module"> 
+                    	<div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/oqbO8AuSXk8" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/oqbO8AuSXk8">Partai Besar Indonesia 1</a>.</p>
+                        </div><!-- End .video-container --> 
+                        <div class="spacer-20"></div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/02UEMXz3FhI" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/02UEMXz3FhI">Partai Besar Indonesia 2</a>.</p>
+                        </div><!-- End .video-container -->
+                        <div class="spacer-20"></div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/VeYb_AbMqM0" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/02UEMXz3FhI">Partai Besar Indonesia 3</a>.</p>
+                        </div><!-- End .video-container --> 
+                    </div><!-- End .sidebar-module -->
+                </div>
+            </div><!-- End .tab-content -->
+            
+
+            
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+                            <div class="module-placeholder sidebar">
+                                <ul class="ext-tabs-sidebar">
+                                    <li class="active">
+                                        <a href="#sidebar-tab-1x"><i class="fa fa-html5"></i> +F Network</a>
+                                    </li>
+                                    <li>
+                                        <a href="#sidebar-tab-2x"><i class="fa fa-twitter"></i> Social</a>
+                                    </li>            
+                                </ul><!-- End .ext-tabs-sidebar -->
+                                <div class="tab-content">
+                                    <div id="sidebar-tab-1x" class="tab-pane active clearfix">
+                                        <div class="inner-padding">
+                                            <nav class="sidebar-nav-v2"> 
+                                                Faridiot.com is a official website of Jogja +F Labs Experiments</br></br>
+                                                <ul>
+                                                    <li>
+                                                        <a href="calendar.html"><i class="fa fa-pagelines"></i> blog<medium class="text-muted">.faridiot.com</medium></a>
+                                                    </li>    
+                                                    <li>
+                                                        <a href="planning.html"><i class="fa  fa-leaf"></i> design<medium class="text-muted">.faridiot.com</medium></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="maps.html"><i class="fa fa-code"></i> view<medium class="text-muted">.faridiot.com</medium></a>
+                                                    </li> 
+                                                    <li>
+                                                        <a href="sitemap.html"><i class="fa fa-file-text-o"></i> notes<medium class="text-muted">.faridiot.com</medium></a>
+                                                    </li>                                                                                                                   
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div id="sidebar-tab-2x" class="tab-pane clearfix">
+                                        <div class="inner-padding">
+                                            <nav class="sidebar-nav-v2">
+                                                Faridiot.com is a official website of Jogja +F Labs Experiments</br></br>
+                                                <ul>
+                                                    <li>
+                                                        <a href="calendar.html"><i class="fa fa-facebook-square"></i> facebook.com<medium class="text-muted">/faridiot</medium></a>
+                                                    </li>    
+                                                    <li>
+                                                        <a href="planning.html"><i class="fa  fa-twitter-square"></i> twitter.com<medium class="text-muted">/faridiot</medium></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="maps.html"><i class="fa fa-google-plus-square"></i> google.com<medium class="text-muted">/+/AhmadFarid...</medium></a>
+                                                    </li> 
+                                                    <li>
+                                                        <a href="sitemap.html"><i class="fa fa-youtube-square"></i> youtube.com<medium class="text-muted">/faridiotHD</medium></a>
+                                                    </li>                                                                                                                   
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div><!-- End .tab-content -->               
+                            </div><!-- End .module-placeholder -->
+
+                            <div class="sidebar-module">
+                <h3>
+                	Join Twitter today.</br>
+                    <small class="text-muted">Sign up to see Tweets from faridiot.</small>
+                </h3></br>
+                                <div class="btn-count">
+                                	<span>180k</span>
+                                	<a href="http://twitter.com/faridiot" class="btn  btn-default"><i class="fa fa-twitter"></i>&nbsp; followers</a>
+                                </div>
+                            </div> 
+            
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module">              
+
+
+            </div><!-- End .sidebar-module --> 
+        </aside><!-- End aside --> 
+
+		<!-- ********************************************
+             * SIDEBAR SEC:                             *
+             *                                          *
+             * the part which contains things like      *
+             * calendar, users, lists, blocks and       *
+             * much more.                               *
+             ******************************************** -->
+        
+        <div id="sidebar-sec" class="sidebar"> 
+         
+        	<div class="sidebar-sec-top"></div> 
+                  
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module">               
+                <form class="input-group">
+                    <input type="text" name="" class="form-control" placeholder="Type A head..." id="typeahead-sidebar-search"/>
+                    <div class="input-group-btn">
+                    	<!-- can NOT be used with typeahead
+                        <a href="#" class="clear-input"><i class="fa fa-times-circle"></i></a>
+                        -->
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div><!-- End .sidebar-module -->  
+            
+            <div class="sidebar-line"><!-- A seperator line --></div>
+
+            <!-- * Tabs can be removed, if so dont forget * -->
+            <!-- * to remove the .tab-pane divs(wrapper). * -->
+             
+            <ul class="ext-tabs-sidebar">
+                <li class="active">
+                    <a href="#sidebar-tab-3"><i class="fa fa-group"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="#sidebar-tab-4"><i class="fa fa-check"></i> ToDo</a>
+                </li>            
+            </ul><!-- End .ext-tabs-sidebar -->
+            <div class="tab-content">
+                <div id="sidebar-tab-3" class="tab-pane active">
+
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+                            
+                    <div class="sidebar-module">                     
+                        <ul class="mini-list">
+                            <li>
+                                <img src="images/users/jokowi.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Joko Widodo</a></li>
+                                    <li><a href="#">jokowi@indo.net.id</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/sri.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Sri Mulyani</a></li>
+                                    <li><a href="#">@srimulyaninet</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/anies.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Anies Baswedan</a></li>
+                                    <li><a href="#">anies.baswedan@indonesiamengajar.org</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/jk.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Jusuf Kalla</a></li>
+                                    <li><a href="#">@JusufKalla</a></li>
+                                </ul>
+                            </li>                        
+                            <li>
+                                <img src="images/users/samad.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Abraham Samad</a></li>
+                                    <li><a href="#">@abraham_samad</a></li>
+                                </ul>
+                            </il>
+                            <li>
+                                <img src="images/users/puan.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Puan Maharani</a></li>
+                                    <li><a href="#">@puan_maharani</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/ahok.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Basuki Tjahja P</a></li>
+                                    <li><a href="#">btp@ahok.org</a></li>
+                                </ul>
+                            </li>                                                                                                
+                            <li>
+							<img src="images/users/yenny.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Yenny Wahid</a></li>
+                                    <li><a href="#">@yennywahid</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/ganjar.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Ganjar Pranowo</a></li>
+                                    <li><a href="#">ganjarpranowo@yahoo.com</a></li>
+                                </ul>
+                            </li>                
+                            <li>
+							<img src="images/users/hemas.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">GKR Hemas</a></li>
+                                    <li><a href="#">@RatuHemas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/mahfudmd.jpg" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="#" class="bold">Mahfud MD</a></li>
+                                    <li><a href="#">@mohmahfudmd</a></li>
+                                </ul>
+                            </li>          
+							</ul><!-- End .mini-list -->
+                    </div><!-- End .sidebar-module -->                                        
+                </div>
+                <div id="sidebar-tab-4" class="tab-pane">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+	                        
+                    <div class="sidebar-module"> 
+                        <div class="sidebar-todo">
+                            <div class="sidebar-todo-day">
+                                <h5>Due Today</h5>
+                                <ul>
+                                    <li>
+                                        <label class="line-through">Start project X <input type="checkbox" name="" checked/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Email the invoice<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Call client T<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Take a coffe break<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                            <div class="sidebar-todo-day">
+                                <h5>Due Tomorrow <span class="indicator-pill">32</span></h5>
+                                <ul>
+                                    <li>
+                                        <label>Meeting with client T<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Meeting with client X<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label class="line-through">Buy new apple<input type="checkbox" name="" checked/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                            <div class="sidebar-todo-day">
+                                <h5>Due Next Week</h5>
+                                <ul>
+                                    <li>
+                                        <label>Start project T<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Buy new headphones<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                        </div><!-- End .sidebar-todo -->
+                    </div><!-- End .sidebar-module -->               
+                </div>
+            </div><!-- End .tab-content --> 
+            
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module">
+       
+            </div><!-- End .sidebar-module --> 
+        </div><!-- End #sidebar-sec -->          
+                 
+        <div id="main" class="clearfix">
+        
+        <!-- ******************************************** 
+             * MAIN HEADER:                             *
+             *                                          *  
+             * the part which contains the breadcrumbs, *
+             * dropdown menus, toggle sidebar button    *
+             ******************************************** -->
+
+			<header id="header-main">
+            	<div class="header-main-top">
+                	<div class="pull-left">
+                    
+                    	<!-- * This is the responsive logo * --> 
+                                   
+                    	<a href="index.html" id="logo-small"><h4>karma</h4><h5>/webapp</h5></a>
+                    </div>
+                    <div class="pull-right">
+                        
+                    	<!-- * This is the trigger that will show/hide the menu * -->
+                        <!-- * if the layout is in responsive mode              * -->
+                        
+						<a href="#" id="responsive-menu-trigger">
+                        	<i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div><!-- End #header-main-top --> 
+                <div class="header-main-bottom">
+                	<div class="pull-left">
+                    	<ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li class="active">Data</li>
+                        </ul><!-- End .breadcrumb -->
+                    </div> 
+                    <div class="pull-right">
+                    	<p>Version 1.0.0</p>                        
+                    </div> 
+                </div><!-- End #header-main-bottom -->            
+            </header><!-- End #header-main --> 
+        
+            <div id="content" class="clearfix">
+
+            <!-- ********************************************
+                 * HEADER SEC:                              *
+                 *                                          *   
+                 * the part which contains the page title,  *
+                 * buttons and dropdowns.                   *
+                 ******************************************** -->
+                
+                <header id="header-sec"> 
+                	<div class="inner-padding"> 
+                        <div class="pull-left">
+                            <h2>Panel Kontrol</h2>                 
+                        </div> 
+                        <div class="pull-right">
+                            <div class="dropdown">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-comments"></i>
+                                    <span class="indicator-dot">3</span>
+                                </a>
+                                <div role="menu" class="dropdown-menu pull-center ext-dropdown-comments">
+                                    <div class="ext-dropdown-header">
+                                        <i class="fa fa-comments"></i> 
+                                        <h5>Comments</h5>
+                                        <a href="#" class="btn btn-default btn-sm delete-master"><i class="fa fa-trash-o"></i></a>
+                                        <span class="indicator-dot">3</span>
+                                    </div> 
+                                    <div class="ext-dropdown-comments-content">
+                                        <div>
+                                            <img src="images/users/user-1.jpg" alt="" class="avatar"/>
+                                            <a href="#">Karma, a good thing</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Steven</a></li>
+                                                <li><span>Date:</span> Dec 11, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span> 
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="images/users/user-4.jpg" alt="" class="avatar"/>
+                                            <a href="#">A simple, fast way to reduce stress</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Linda</a></li>
+                                                <li><span>Date:</span> Dec 3, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span> 
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="images/users/user-6.jpg" alt="" class="avatar"/>
+                                            <a href="#">Blog: karma and revenge</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Debra Hopper</a></li>
+                                                <li><span>Date:</span> Nov 18, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span>  
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span>No new comments</span>                                                                     	
+                                    </div>
+                                    <div class="ext-dropdown-footer">
+                                        <p>Updated: 11/12/2012 - 14:12</p>
+                                        <a href="#" class="btn btn-default btn-sm"><i class="fa fa-caret-right"></i></a>
+                                    </div> 
+                                </div>
+                            </div><!-- End .dropdown -->            
+                            <div class="btn-group">
+                                <a class="btn btn-default" href="#">
+                                    <i class="fa fa-star"></i>
+                                </a>                                         
+                                <a class="btn btn-default" href="#" id="modal-update-trigger">
+                                Download
+                                </a>
+                                <a class="btn btn-default" href="#">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                            </div><!-- End .btn-group -->
+                            <div class="dropdown">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-inbox"></i>
+                                    <span class="indicator-dot">3</span>
+                                </a>
+                                <div role="menu" class="dropdown-menu pull-right ext-dropdown-inbox">
+                                    <div class="ext-dropdown-header">
+                                        <h5>Inbox</h5>
+                                        <a href="#" class="btn btn-default btn-sm delete-master"><i class="fa fa-trash-o"></i></a>
+                                        <span class="indicator-dot">3</span>
+                                    </div> 
+                                    <div class="ext-dropdown-inbox-content">
+                                        <div>
+                                            <a href="#">He did you get my new blog post?</a>
+                                            <ul class="nav">
+                                                <li><span>Send by:</span> <a href="#">Debra Hopper</a></li>
+                                                <li><span>Date:</span> Dec 12, 2012 - 14:03:09</li>
+                                                <li>
+                                                    <span>Actions:</span> 
+                                                    <a href="#">Reply</a> - 
+                                                    <a href="#">Read</a> -
+                                                    <a href="#">Spam</a> -  
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">I really love your karma theme</a>
+                                            <ul class="nav">
+                                                <li><span>Send by:</span> <a href="#">Nathan Rupertson</a></li>
+                                                <li><span>Date:</span> Dec 3, 2012 - 22:44:12</li>
+                                                <li>
+                                                    <span>Actions:</span> 
+                                                    <a href="#">Reply</a> - 
+                                                    <a href="#">Read</a> -
+                                                    <a href="#">Spam</a> -  
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">Feedback of a happy customer</a>
+                                            <ul class="nav">
+                                                <li><span>Send by:</span> <a href="#">Steven Watson</a></li>
+                                                <li><span>Date:</span> Dec 11, 2012 - 10:53:59</li>
+                                                <li>
+                                                    <span>Actions:</span> 
+                                                    <a href="#">Reply</a> - 
+                                                    <a href="#">Read</a> -
+                                                    <a href="#">Spam</a> -  
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span>No new emails</span>                                                                      	
+                                    </div>
+                                    <div class="ext-dropdown-footer">
+                                        <div class="progress bar-small">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                        <p>60%</p>
+                                        <a href="#" class="btn btn-default btn-sm"><i class="fa fa-caret-right"></i></a>
+                                    </div>                  
+                                </div>
+                            </div><!-- End .dropdown -->
+                         </div>
+                    </div><!-- End .inner-padding -->    
+            	</header><!-- End #header-sec --> 
+
+                <!-- ********************************************
+                     * WINDOW:                                  *
+                     *                                          *
+                     * the part which contains the main content *
+                     ******************************************** -->
+                                     
+                <div class="window">  
+                    <div class="actionbar">
+                        <div class="pull-left">
+                        	<a href="#" class="btn small-toggle-btn" data-toggle-sidebar="left"></a> 
+                            <a href="#" id="lockscreen-slider-trigger" class="btn">
+                                <i class="fa fa-lock"></i>&nbsp;  Lock screen
+                            </a> 
+                            <div class="dropdown">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <img src="images/icons/flags/shiny/16/Indonesia.png" alt=""/>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul role="menu" class="dropdown-menu ext-flags">
+                                    <li>
+                                        <a href="#">Indonesia <img src="images/icons/flags/shiny/16/Indonesia.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">English <img src="images/icons/flags/shiny/16/United-Kingdom.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">German <img src="images/icons/flags/shiny/16/Germany.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">French <img src="images/icons/flags/shiny/16/France.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chinees <img src="images/icons/flags/shiny/16/China.png" alt=""/></a>
+                                    </li>
+                                </ul>
+                            </div>                          
+                        </div> 
+                        <div class="pull-right">
+                            <a href="#" class="btn small-toggle-btn" data-toggle-sidebar="right"></a>  
+                        </div>    
+                    </div><!-- End .actionbar-->
+                    <div class="row ext-raster">
+                    	<div class="col-sm-8">
+                            <div class="row ext-raster">
+                                <div class="col-sm-6">
+                                    <div class="inner-padding">
+                                        <div class="progress-project">
+                                            <div class="progress-project-header">
+                                                <h5>Target minggu ini</h5><span>90%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                    <span class="sr-only">90% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div><!-- End .progress-project -->
+                                    </div><!-- End .inner-padding -->  
+                                </div>
+                                <span class="breakpoint-sm ext-raster-line-6"></span>
+                                <div class="col-sm-6">
+                                    <div class="grouped raster-3-blocks">
+                                        <div class="duo-val-block">
+                                            <span class="font-big timer" id="earth" data-from="3179" data-to="4502" data-speed="1000000"></span>
+                                            <span class="font-small">Clicks</span>
+                                        </div><!-- End .duo-val-block -->
+                                        <div class="duo-val-block">
+                                            <span class="font-big timer" id="infinity" data-from="4481" data-to="4593" data-speed="400000"></span>
+                                            <span class="font-small">Views</span>
+                                        </div><!-- End .duo-val-block -->
+                                        <div class="duo-val-block">
+                                            <span class="font-big">759</span>
+                                            <span class="font-small">Sales</span>
+                                        </div><!-- End .duo-val-block -->
+                                    </div>                                              
+                                </div>
+                                <span class="ext-raster-line-bottom"></span>
+                            </div><!-- End .row -->
+                            <div class="row">
+                            	<div class="col-sm-12">
+                                    <div class="alert alert-block alert-inline-top alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        <h4>Selamat datang kembali, Farid.</h4>
+                                        Kamu mendapat tugas dari Jogja + F Labs Experiments untuk membangun layout Project X dengan Bootstrap (default + extended) grid.
+                                    </div>
+                                    <div class="inner-padding">
+										<div class="spacer-20"></div>
+                                    	<div id="chart-mixed-1" style="width:100%; height:240px"></div>
+                                        <div class="spacer-20"></div>
+                                        <div class="subheading">
+                                            <h3>Dengan CSS3, kamu tidak perlu lagi Flash untuk membuat animasi berbasis web</h3>
+                                            <p>CSS3 terbaru telah membuka banyak jalan untuk web designer dan developer. Sekarang memungkinkan untuk membuat animasi dan interaktivitas sepenuhnya dalam CSS markup, tanpa perlu lagi Flash, Silverlight atau After Effects. Baca selengkapnya</p>
+
+                                <div class="spacer-30"></div>
+                                <form>
+                                    <table class="table table-bordered table-striped table-form">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="th-square"><label><input type="checkbox" class="checkbox-master"/><span></span></label></th>
+                                                <th scope="col">Project</th>                                                 
+                                                <th scope="col">Live</th>
+                                                <th scope="col" class="th-select2-tags">Tags</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                            
+                                                <td><input type="text" value="A Plurality of Indonesian Islam" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb1" checked><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb1" value="option2"><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="HTML5, Prototype, Usability"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option>Edit</option>
+                                                        <option value="showcase/dua/index.html">View</option>
+                                                        <option>Delete</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Two Face of Islam" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb2" value="option1"><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb2" value="option2" checked><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="Prototype, jQuery"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option>Edit</option>
+                                                        <option value="showcase/dua/index.html">View</option>
+                                                        <option>Delete</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Jalan-jalan Keliling Jogja" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb3" value="option1" checked><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb3" value="option2"><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="HTML5, CSS3, Angularjs"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option>Edit</option>
+                                                        <option  value="showcase/spritely/jogja.html">View</option>
+                                                        <option>Delete</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Pocong" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb4" value="option1" checked><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb4" value="option2"><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="Blog, Minimal, CS6"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option>Edit</option>
+                                                        <option>Move</option>
+                                                        <option>Delete</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Langit Indonesia" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb5" value="option1"><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb5" value="option2" checked><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="Usability, Clean, fast"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option>Edit</option>
+                                                        <option>Move</option>
+                                                        <option>Delete</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <div class="pull-left">
+                                                        Copyright <img src="landing/logo-white.png"></img> All Right Reserved.
+                                                    </div>
+                                                    <div class="pull-right">
+                                                        <button type="submit" class="btn btn-default">Reset</button>
+                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                    </div>  
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </form>
+
+                                        </div>
+
+         								<div class="row">
+                                
+                                            <!-- Start grid -->
+                                            
+                                            <section class="col-sm-12">
+                                                                                
+                                                <!-- New widget -->
+
+                        <div class="subheading">
+                            <p class="text-warning">Jogja +F Web Designer memberikan perhatian terhadap pluralitas. Jadilah kontributor di faridiot.com untuk mengkampanyekan demokrasi, kesetaraan, dimana bagi sebagian orang hal ini sulit untuk memahaminya hanya dalam kata. Kita bisa menjelaskannya dengan annimation dan kretifitas. Baca selengkapnya.</p>
+                        </div>
+                        <div class="filter-bar" id="filter-2">
+                            <div class="pull-left">
+                                <ul class="filters">
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter active" data-filter="all">All</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-web">Web Design</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-graphic">Graphic Design</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-clients">Print Design</a>
+                                    </li>
+                                </ul>
+                                <div class="filter-found"></div>
+                            </div>
+                            <div class="pull-right">
+                                <ul class="filters">
+                                    <li>
+                                        <a href="javascript:void(0)" class="sort" data-sort="data-id" data-order="asc">asc</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="sort active" data-sort="data-id" data-order="desc">desc</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="thumbs-list">
+                            <ul id="mix-2">
+                                <li class="mix filter-graphic" data-id="1">
+                                    <a href="images/gallery/graphic_1.png" class="lightbox" title="Touch, Drag, Click me">
+                                        <img src="images/gallery/95x95/graphic_1.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Touch</div>
+                                </li>
+                                <li class="mix filter-graphic" data-id="2">
+                                    <a href="images/gallery/graphic_2.png" class="lightbox" title="Mainkan Telurku">
+                                        <img src="images/gallery/95x95/graphic_2.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Telurku</div>
+                                </li>
+                                <li class="mix filter-graphic" data-id="3">
+                                    <a href="images/gallery/graphic_3.png" class="lightbox" title="Penun Tombol-tombol">
+                                        <img src="images/gallery/95x95/graphic_3.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Tombol</div> 
+                                </li>
+                                <li class="mix filter-graphic" data-id="4">
+                                    <a href="images/gallery/graphic_4.png" class="lightbox" title="Jadwal Imsakiyah Ramadhan 1434 H">
+                                        <img src="images/gallery/95x95/graphic_4.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Imsak</div>
+                                </li>
+                                <li class="mix filter-graphic" data-id="5">
+                                    <a href="images/gallery/graphic_5.png" class="lightbox" title="Logo UKSH">
+                                        <img src="images/gallery/95x95/graphic_5.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">UKSH 1</div> 
+                                </li>
+                                <li class="mix filter-graphic" data-id="6">
+                                    <a href="images/gallery/graphic_6.png" class="lightbox" title="Logo UKSH">
+                                        <img src="images/gallery/95x95/graphic_6.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">UKSH 2</div>
+                                </li>
+                                <li class="mix filter-graphic" data-id="7">
+                                    <a href="images/gallery/graphic_7.png" class="lightbox" title="Kalender Wahid Hasyim 2014">
+                                        <img src="images/gallery/95x95/graphic_7.png" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Image 7</div> 
+                                </li>
+                                <li class="mix filter-graphic" data-id="8">
+                                    <a href="images/gallery/graphic_8.jpg" class="lightbox" title="Mujahadah Dzikrul Ghafilin Portrait">
+                                        <img src="images/gallery/95x95/graphic_8.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">MDG-P</div>
+                                </li>
+                                <li class="mix filter-graphic" data-id="9">
+                                    <a href="images/gallery/graphic_9.jpg" class="lightbox" title="Mujahadah Dzikrul Ghafilin Landscape">
+                                        <img src="images/gallery/95x95/graphic_9.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">MDG-L</div> 
+                                </li>
+                                <li class="mix filter-web" data-id="10">
+                                    <a href="images/gallery/web_1.jpg" class="lightbox" title="Gear. Visit project in http://faridiot.com/showcase/spritely/gear.html">
+                                        <img src="images/gallery/95x95/web_1.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Gear</div>
+                                </li>
+                                <li class="mix filter-web" data-id="11">
+                                    <a href="images/gallery/web_2.jpg" class="lightbox" title="Jalan-jalan Keliling Jogja. Visit project in http://faridiot.com/showcase/spritely/jogja.html">
+                                        <img src="images/gallery/95x95/web_2.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Jogja</div> 
+                                </li>
+                                <li class="mix filter-web" data-id="12">
+                                    <a href="images/gallery/web_10.jpg" class="lightbox" title="Dua Wajah Islam. Visit project in http://faridiot.com/showcase/dua/index.html">
+                                        <img src="images/gallery/95x95/web_10.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Dua</div>
+                                </li>
+                                <li class="mix filter-web" data-id="13">
+                                     <a href="images/gallery/web_12.jpg" class="lightbox" title="Pocong. Visit project in http://faridiot.com/showcase/spritely/pocong.html">
+                                        <img src="images/gallery/95x95/web_12.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Pocong</div> 
+                                </li>
+                                <li class="mix filter-web" data-id="14">
+                                    <a href="images/gallery/web_4.jpg" class="lightbox" title="Pluralitas. Visit project in http://faridiot.com/showcase/threejs/index.html">
+                                        <img src="images/gallery/95x95/web_4.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Pluralitas</div>
+                                </li>
+                                <li class="mix filter-web" data-id="15">
+                                    <a href="images/gallery/web_3.jpg" class="lightbox" title="Hujan Salju. Visit project in http://faridiot.com/showcase/spritely/pocong.html">
+                                        <img src="images/gallery/95x95/web_3.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Image 15</div>
+                                </li>
+                            </ul>
+                        </div><!-- End .thumbs-list --> 
+
+                        <div class="spacer-40"></div> 
+                        <div class="hr-totop"><span>Top</span></div>
+                        <div class="spacer-10"></div>
+                                                
+												<!-- New widget -->
+                                                
+                                                <div class="widget">
+                                                    <header>
+                                                        <h2>Jogja +F Web Designer</h2>
+                                                    </header>
+                                                    <div>
+
+                                                        <div class="row ext-raster">
+                                                            <span class="breakpoint-sm ext-raster-line-top"></span>
+                                                            <div class="col-sm-12">  
+                                                                <div class="inner-padding"> 
+                                                                Kami adalah desainer web-responsif dari Yogyakarta, Indonesia. Bagian dari Jogja +F Labs Experiments yang mengembangkan proyek berbasis web. Kami membuat web lebih intuitif dan spesial dengan efek animasi, full screen (pilihan), ramah mobile browser, sederhana, dan menggunakan standar web modern dengan HTML5, CSS3, jQuery, dan Javascript. Tidak ada Flash atau plugin lain pihak ketiga. Kami selalu membangun dari konsep, kami membuat web original dan futuristik. Dari Jogja untuk Indonesia.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End .widget --> 
+                                                
+                                                <!-- New widget -->
+                                                
+                                                <div class="widget">
+                                                    <header>
+                                                        <h2>Maps</h2>
+                                                    </header>
+                                                    <div>
+                                                        <div class="alert alert-info alert-inline-top">
+                                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                                            <i class="fa fa-info"></i>Jogja +F Labs Experiments Latitude -7.77272 Longitude 110.40118
+                                                        </div> 
+                                                        <div class="gmap3-flex" id="gmap3-1"></div>
+                                                    </div>
+                                                </div><!-- End .widget --> 
+                                            </section>
+                                        </div>
+                                        
+                                        <div class="hr-totop"><span>Top</span></div>
+                                        <div class="spacer-10"></div>
+                                        Faridiot.com is a official website of Jogja +F Labs Experiments
+                                    </div><!-- End .inner-padding -->  
+                                </div>
+                            </div><!-- End .row -->
+                        </div>
+                        <span class="breakpoint-sm ext-raster-line-8"></span>
+                        <div class="col-sm-4">
+                            <ul class="ext-tabs tabs-negative-position">
+                                <li class="active">
+                                    <a href="#content-tab-10">Timeline</a>
+                                </li>
+                                <li>
+                                    <a href="#content-tab-11">Form Project</a>
+                                </li>        
+                            </ul><!-- End .ext-tabs -->
+                            <div class="tab-content">
+                                <div id="content-tab-10" class="tab-pane active">
+                                    <div class="inner-padding">
+                                        <div class="subheading">
+                                            <h3>Recent Activity</h3>
+                                            <div class="btn-group pull-right">
+                                                <a href="#" class="btn btn-default btn-sm tooltip-top" title="Show less" id="as-min-trigger">
+                                                    <i class="fa fa-th-large"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-default btn-sm active tooltip-top" title="Show more" id="as-plus-trigger">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="activity-stream">
+
+                                            <div class="activity-stream-item" id="as-item-2">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="busy-dot"></span> <small class="text-muted pull-right">1 min ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Posted a message on the wall.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <img src="images/upload/pocong_s.gif" width="100%">
+                                                    <i>never tired of jumping...</i> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item" id="as-item-1">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="online-dot"></span> <small class="text-muted pull-right">21 mins ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Has accepted A Plurality of Indonesian Islam request clone.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="label label-warning">Comment</span> <small class="text-muted pull-right">27 mins ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Posted a comment in the <a href="http://www.imdb.com/title/tt1602620/" class="highlight-link">forums</a>.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <p>
+                                                        <img src="images/upload/amour.jpg" align="left"> The emotion felt towards the two protagonists as they struggle with coming to the end of their lives actually gave me a crushing sensation in my chest by the end of the runtime. This is an extremely tough film to watch at times. 
+                                                        </p>
+                                                        </br>
+                                                        <p class="text-muted">
+                                                        Amour, Academy Award Winner for Best Foreign Language Film 2012, #nowplaying
+                                                        </p>
+                                                        <div class="spacer-20"></div>
+                                                        <textarea class="auto-expand form-control noresizing" name="" placeholder="Type comment here..." data-autoexpand-size="100"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">44 mins ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Has send you an message [<a href="#" class="underline">read message</a>]
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">21 mins ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Has posted a new video.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <div class="video-container">
+                                                            <iframe width="560" height="315" src="//www.youtube.com/embed/Xm5i5kbIXzc" frameborder="0" allowfullscreen></iframe>
+                                                        </div><!-- End .video-container -->
+                                                        <i>the web is our largest shared resource, let's keep it free and open for us, and for the next generation,</i> 
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="offline-dot"></span> <small class="text-muted pull-right">10 days ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Posted a quote.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <blockquote class="pull-right">
+                                                            <p>Jogja +F Labs Experiments, responsive-web Designer from Yogyakarta, Indonesia</p>
+                                                            <small>visit official website <cite title="Source Title">faridiot.com</cite></small>
+                                                        </blockquote>
+                                                    </div>                                   
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">11 mins ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Posted a comment in the forums.</br>
+                                                        <a href="http://en.wikipedia.org/wiki/List_of_Academy_Award_winners_and_nominees_for_Best_Foreign_Language_Film" class="highlight-link">This List of Academy Award winners and nominees for Best Foreign Language Film</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">23 day ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Changed her account information.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">1 month ago</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Like 5 new images to media.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <div class="thumbs-list thumbs-small">
+                                                            <ul>
+                                                                <li>
+                                                                    <img src="images/gallery/60x60/web_2.jpg" alt=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="images/gallery/60x60/web_3.jpg" alt=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="images/gallery/60x60/web_4.jpg" alt=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="images/gallery/60x60/web_10.jpg" alt=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="images/gallery/60x60/web_12.jpg" alt=""/>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                            </div>                                                                                           
+                                        </div><!-- End .activity-stream -->
+                                    </div><!-- End .inner-padding -->
+                                    
+                                    <!-- Lockscreen -->
+                                    <div class="lockscreen" id="lockscreen-target">
+                                        <div class="lockscreen-overlay"></div>
+                                        <div class="lockscreen-modal">
+                                            <div class="lockscreen-placeholder"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="content-tab-11" class="tab-pane">
+                                    <div class="inner-padding">
+                                        <div class="subheading">
+                                            <h3>Add New Project</h3> 
+                                        </div>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-0">Name project: <span class="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" placeholder="Basic text input" id="ff-0"/>
+                                                </div>
+                                            </div> 
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-1">URL project:</label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="Input url" id="ff-1"/>
+                                                        <span class="input-group-addon">.faridiot.com</span>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="spacer-20"></div>  
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Description:</label>
+                                                    <input type="text" class="form-control input-lg" placeholder="Type Description here" id="ff-2"/>
+                                                    <div class="helper-text-box">
+                                                        <p>
+                                                        Add your project description.
+                                                        </p>
+                                                    </div><!-- End .helper-text-box -->
+                                                </div>
+                                            </div> 
+                                            <div class="spacer-10"></div> 
+                                            <fieldset> 
+                                            	<legend>Checkbox</legend>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="stacked-labels">
+                                                            <label><input type="checkbox" name="tags" value="html5"/><span></span> HTML5</label>
+                                                            <label><input type="checkbox" name="tags" value="css3"/><span></span> CSS3</label>
+                                                            <label><input type="checkbox" name="tags" value="css3"/><span></span> Javascript</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="stacked-labels">
+                                                            <label><input type="checkbox" name="tags" value="html5"/><span></span> Database</label>
+                                                            <label><input type="checkbox" name="tags" value="css3"/><span></span> WebGL</label>
+                                                            <label><input type="checkbox" name="tags" value="css3"/><span></span> Other</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Is Responsive or support mobile?</label>
+                                                    <select name="client" required class="form-control simpleselect">
+                                                        <option value="">-- Select option --</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>  
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Target for:</label>
+                                                    <div class="inline-labels">
+                                                        <label><input type="radio" name="gender" value="male" checked/><span></span> Male</label>
+                                                        <label><input type="radio" name="gender" value="female"/><span></span> Female</label>
+                                                        <label><input type="radio" name="gender" value="all"/><span></span> All</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Message:</label>
+                                                    <textarea class="form-control" placeholder="Basic  textarea"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                	<label><input type="checkbox"/><span></span> Accept terms?</label>
+                                                   <button class="btn btn-default pull-right" type="submit">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div><!-- End .inner-padding -->
+                            	</div>
+                            </div>
+                            <hr/>
+							
+							<div class="spacer-20"></div>
+                                        <div class="hr-totop"><span></span></div>
+                                        <div class="spacer-10"></div>
+                                        
+                            <div class="inner-padding">
+                            	<iframe width="430" height="242" src="//www.youtube.com/embed/02UEMXz3FhI" frameborder="0" allowfullscreen></iframe>
+                            </div><!-- End .inner-padding -->
+                        </div>
+                        <span class="ext-raster-line-bottom"></span>
+                    </div>
+      				<div class="inner-padding">
+                        <div class="row"> 
+                            <div class="col-sm-12">
+
+	    	<div class="galleryItem">
+	    		<a href="#"><img src="images/icons/homepage.jpg" alt="" /></a>
+	    		<h3>Faridiot</h3>
+	    		<p>Beranda Jogja +F Labs Experiments.</p>
+	    	</div>
+            
+	    	<div class="galleryItem">
+	    		<a href="#"><img src="images/icons/blog.jpg" alt="" /></a>
+	    		<h3>Blog</h3>
+	    		<p>Official Blog. Beralamat di blog.faridiot.com untuk berbagi ide dan hal-hal menarik lainnyaa.</p>
+	    	</div>
+                                
+            <div class="galleryItem">
+	    		<a href="http://github.com/faridiot"><img src="images/icons/design.png" alt="" /></a>
+	    		<h3>Design</h3>
+	    		<p>Official Blog Desain. Showcase project desain dan informasi tentang desain.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="#"><img src="images/icons/facebook.png" alt="" /></a>
+	    		<h3>Facebook</h3>
+	    		<p>Official Facebook Account. Menjadi teman dan like fan page kami untuk tetap terhubung.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="#"><img src="images/icons/twitter.jpg" alt="" /></a>
+	    		<h3>Twitter</h3>
+	    		<p>Officia Twitter Account. Follow untuk mendapatkan informasi baru yang menarik.</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://github.com/faridiot"><img src="images/icons/view.png" alt="" /></a>
+	    		<h3>View</h3>
+	    		<p>Official Blog View. Melihat dan menilai website di Indonesia.</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://github.com/faridiot"><img src="images/icons/onenote.png" alt="" /></a>
+	    		<h3>Notes</h3>
+	    		<p>Catatan kecil dan personal. Terkait apapun.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="/projectX"><img src="images/icons/x-files.jpg" alt="" /></a>
+	    		<h3>ProjectX</h3>
+	    		<p>ProjectX kami. Membangun hal-hal menakjubkan bersama-sama</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="#"><img src="images/icons/youtube.png" alt="" /></a>
+	    		<h3>Youtube</h3>
+	    		<p>Official Youtube Channal. Temukan konten video dari kami.</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://github.com/faridiot"><img src="images/icons/github.jpg" alt="" /></a>
+	    		<h3>GitHub</h3>
+	    		<p>Mengunjungi repository kami di GitHub. Open Source project.</p>
+	    	</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End .window -->
+                
+                <!-- ********************************************
+                     * FOOTER MAIN:                             *
+                     *                                          *
+                     * the part which contains things like      * 
+                     * chat, buttons, copyright and             *
+                     * dropup menu(s).                          *
+                     ******************************************** -->
+                    
+                <footer id="footer-main" class="footer-sticky">
+                    <div class="footer-main-inner">
+                        <div class="pull-left">
+                            <p>Copyright © 2014 Ahmad Farid Mubarok</p>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-cogs"></i>
+                            </a>                            
+                            <div class="dropup" id="ext-dropdown-chat">
+                                <a class="btn dropdown-toggle ext-dropdown-chat-btn" data-toggle="dropdown" href="#">
+                                    <span class="online-dot"></span>
+                                    A. Farid Mubarok
+                                    <i class="fa fa-comments chat-blink-icon"></i>
+                                </a>                  
+                                <div class="ext-dropdown-chat dropdown-menu pull-right">
+                                    <div class="ext-dropdown-chat-inner">
+                                        <div class="ext-dropdown-header">
+                                            <i class="fa fa-comments"></i>
+                                            <h5>Pesan langsung</h5>
+                                            <a href="#" class="btn btn-default btn-sm ext-dropdown-chat-info-toggle">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>                            
+                                        </div>
+                                        <div class="ext-dropdown-chat-window scrollbar-y">
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="seperator"><span>13/05/14</span></div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-5.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Martin:</strong>
+                                                    <span>11:49</span>
+                                                    <p>He, ada orag disini...</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-1.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>A. Farid Mubarok:</strong>
+                                                    <span>11:53</span>
+                                                    <p>Ya, aku...</p>
+                                                </div>
+                                            </div>                                 
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-1.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>A. Farid Mubarok:</strong>
+                                                    <span>11:54</span>
+                                                    <p>...hampir tertidur. Kau ingin membangunkan aku?</p>
+                                                </div>
+                                            </div>  
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-5.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Martin:</strong>
+                                                    <span>11:56</span>
+                                                    <p>Ya, saya akan mengganggu, jangan lupa untuk menambahkan beberapa foto  <a href="#">disini</a>.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-1.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Steven:</strong>
+                                                    <span>11:59</span>
+                                                    <p>Oke, tidak ada masalah, saya juga belum mengetik blog untuk hari ini.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="seperator"><span>13/05/14</span></div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-5.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Martin:</strong>
+                                                    <span>00:01</span>
+                                                    <p>Baiklah, selamat malam.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/user-1.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Steven:</strong>
+                                                    <span>01:58</span>
+                                                    <p>Ya,</p>
+                                                </div>
+                                            </div>                       
+                                        </div>
+                                        <div class="ext-dropdown-chat-editor">
+                                            <textarea name="" class="form-control" placeholder="Type your message here..."></textarea>
+                                        </div>
+                                        <div class="ext-dropdown-chat-info">
+                                            <h5>Jogja +F Chat. Everywhere.</h5>
+                                            <p>
+                                            Chat with Jogja +F Web Designer friends right from your desktop.
+                                            </p>
+                                            <div class="spacer-15"></div>
+                                            <p>
+                                            Maecenas in diam tempus velit viverra ultrices non eu urna. Maecenas nibh ante, consectetur non faucibus at, 
+                                            suscipit non est. Integer lobortis imperdiet mattis curabitur cursust.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End .dropup -->              
+                            <a href="#" class="btn" id="toggle-footer">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </div> 
+                    </div><!-- End .footer-main-inner -->   
+                </footer><!-- End #footer-main -->  
+            </div><!-- End #content -->  
+    	</div><!-- End #main --> 
+    </div><!-- End #container --> 
+    
+    <!--Modal -->
+    <div class="modal fade" id="modal-update" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Update 13.2.1 available</h4>
+    		    </div>
+				<div class="modal-body">
+                    <div class="row" style="margin-bottom:-20px">
+                        <div class="col-xs-3">
+                            <i class="fa fa-download" style="font-size:120px;color:#ccc"></i>
+                        </div>
+                        <div class="col-xs-9">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet molestie justo at pulvinar. 
+                            In hac habitasse platea dictumst. Proin accumsan, tellus quis varius molestie, mi dolor facilisis risus, 
+                            quis tristique neque augue eget nunc. Curabitur turpis sapien, lacinia in lacinia nec,
+                            </p>
+                            <div class="spacer-20"></div>
+                            <h4>Whats new in version 13.2.1</h4>
+                            <div class="spacer-20"></div>
+                            <ul>
+                                <li>Suspendisse laoreet molestie justo at pulvinar.</li>
+                                <li>Proin accumsan, tellus quis varius molestie, mi dolor facilisis risus.</li>
+                                <li>In hac habitasse platea dictumst. Proin accumsan, tellus quis varius molestie dolum ipkut. Curabitur turpis sapien lorem.</li>
+                                <li>Curabitur turpis sapien, lacinia in lacinia necr.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet molestie justo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary pull-right">Get it now</button>
+                </div>
+			</div>
+		</div>
+	 </div>
+     
+	 <!-- Lockscreen -->
+     <div class="lockscreen" id="lockscreen-slider">
+     	<div class="lockscreen-overlay"></div>
+        <div class="lockscreen-modal">
+        	<img src="images/users/user-1.jpg" alt="" class="lockscreen-avatar"/>
+			<div class="lockscreen-placeholder"></div>
+        </div>
+     </div>   
+</body>
+</html>

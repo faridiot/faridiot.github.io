@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo { z-index: 31; bottom: 14px; left: 22px; position: fixed; }
+#logo a { padding-left: 75px; padding-bottom: 2px; padding-top: 4px; background: url("img/logo.png") no-repeat scroll left bottom transparent; text-decoration: none; display: block; }

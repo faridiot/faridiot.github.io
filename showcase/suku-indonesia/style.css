@@ -1,0 +1,19 @@
+body, html {
+  margin-top:50px;
+  background-color: #E9F7FE;
+  overflow: hidden;
+  margin-left:-10;
+  margin-right:-10;
+}
+
+
+
+
+#logo { z-index: 31; bottom: 14px; left: 22px; position: fixed; }
+#logo a { padding-left: 75px; padding-bottom: 2px; padding-top: 4px; background: url("logo.png") no-repeat scroll left bottom transparent; text-decoration: none; display: block; }
+
+
+
+
+
+
