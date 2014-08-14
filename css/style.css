@@ -361,7 +361,8 @@ header {
 #current-event-data .event-info-details span {
     color: #999999;
     font-family: Arial;
-    font-size: 12pt;
+    font-size: 10pt;
+
 }
 #current-event-data #event-2 {
     padding: 0 2px 2px;
@@ -572,8 +573,8 @@ header {
     color: #999999;
 }
 #home-sidebar .attends {
-    background-color: #87B844;
-    background-image: url("../images/guests.png");
+    background-color: #212121;
+    background-image: url("../images/faridiot_68x68.png");
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
@@ -591,10 +592,10 @@ header {
 #home-sidebar .sign span {
     color: #FFFFFF;
     display: block;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
     height: 42px;
-    margin-top: 3px;
+    margin-top: -3px;
 }
 #home-sidebar .time {
     float: right;
@@ -612,7 +613,7 @@ header {
     display: block;
     font-size: 32px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 #home-sidebar .timen span {
     font-size: 36px;
