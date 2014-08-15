@@ -640,15 +640,15 @@ header {
     margin-top: 8px;
 }
 #home-sidebar .event-info li.event-info1 {
-    background-image: url("../images/contacts-icon.png");
+    background-image: url("../images/preferences-plugin-script.png");
     background-position: 0 -1px;
 }
 #home-sidebar .event-info li.event-info2 {
-    background-image: url("../images/map-icon.png");
+    background-image: url("../images/qelectrotech.png");
     background-position: 0 1px;
 }
 #home-sidebar .event-info li.event-info3 {
-    background-image: url("../images/info.png");
+    background-image: url("../images/view-pim-contacts.png");
     background-position: 0 1px;
 }
 .botton {
