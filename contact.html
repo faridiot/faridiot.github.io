@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from themeforces.com/demo/html/bloggler/ by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 02 Dec 2014 23:23:03 GMT -->
+<!-- Mirrored from themeforces.com/demo/html/bloggler/contact.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 02 Dec 2014 23:25:22 GMT -->
 <head>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IDWEBDesigner</title>
+    <title>Bloggler - Contact Page</title>
     <meta name="description" content="Bloggler - Photo Blog is a clean and minimalist photography blog perfectly designed for photographers and bloggers. Bloggler is beautiful, clean and very classic design.">
     <meta name="keywords" content="photoblog, psd, portfolio, photography, photographer, unique, creative, blog, minimal, beautiful theme">
     <meta name="author" content="JLP Media">
@@ -16,9 +16,9 @@
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="">
-    <link rel="apple-touch-icon" sizes="72x72" href="">
-    <link rel="apple-touch-icon" sizes="114x114" href="">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap 
     ================================================== -->
@@ -61,11 +61,11 @@
       <img src="img/user.jpg" alt="..." class="img-circle user-img"> <!--- User Icon/Image -->
       <a class="navmenu-brand" href="about-me.html">Hi! I'M Jenn</a> <!--- User Name -->
       <ul class="nav navmenu-nav"> <!--- Menu -->
-        <li class="active"><a href="index-2.html">Home</a></li>
+        <li><a href="index-2.html">Home</a></li>
         <li><a href="about-me.html">About Me</a></li>
         <li><a href="works.html">Works</a></li>
         <li><a href="blog.html">Recent Posts</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li class="active"><a href="contact.html">Contact Me</a></li>
       </ul><!--- End Menu -->
 
       <ul class="social-media"> <!--- User Social Media -->
@@ -80,43 +80,27 @@
 
     <!-- Fullscreen Page 
     ================================================== -->
-    <div id="fullscreen" class="home"> <!-- Full Screen Home Page -->
-      <div id="overlay" class="bg"></div> <!-- Color Overlay -->
-        
-        <div id="home" class="container"> <!-- Start Container -->
-          <div class="row"> <!-- Start Row -->
+    <div id="fullscreen"> <!--- Full Screen Page -->
+      <div id="sidebar" class="contact">
+        <div id="map-canvas" class="map"> </div><!-- featured image-->
+      </div>
 
-            <div id="left" class="col-sm-12 col-md-12"> <!--- Left Content -->
+      <div class="container"> <!-- Start Container -->
+        <div class="row"> <!-- Start Row -->
+          <div id="left" class="col-sm-6 col-md-6"> <!--- Left Content -->
             
               <div id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></div>
-              <div id="page-detail" class="text-center">
-
-                <div id="homeslider" class="carousel slide" data-ride="carousel">
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <div class="carousel-caption">
-                        <h4>DESIGN in IDWEBDesigner</h4>
-                        <hr>
-                        <h1>Everything is design. <br>Everything!</h1>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="carousel-caption">
-                        <h4>WEBDESIGN in IDWEBDesigner</h4>
-                        <hr>
-                        <h1>great web design with <br>functionality</h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="space"></div>
+              <div id="page-detail">
+                
+                <h4>Contact</h4>
+                <h1>I’m Available<br>for Hire</h1>
+                <hr>
                 <ul class="tags">
-                  <li><a href="#">Visual Designer</a></li>
-                  <li><a href="#">Responsive Web Designer</a></li>
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Branding</a></li>
                 </ul>
+
                 <div class="space"></div>
                 <h6>Share This:</h6>
                 <ul class="social-links">
@@ -129,31 +113,61 @@
                   <li><a href="#"><i class="fa fa-behance"></i></a></li>
                 </ul>
               </div>
-            </div> <!--- End Left Content -->
-          
-          </div> <!-- End Row -->
-        </div> <!-- End Container -->
+          </div> <!--- End Left Content -->
+
+          <div class="col-sm-6 col-md-6"> <!--- Right Content -->
+            <div id="content"><!--- Start Content Wrapper-->
+              <div class="text"> <!--- Start Text Wrapper-->
+
+                <h4>I am Here, Willing To Discuss <br>With You About Anything.</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+
+                <div id="contact-form"> <!-- Form Wrapper -->
+                  <div class="row"> <!-- Inner Row -->
+                    <div class="col-md-10 form">
+                      <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-md-10 form">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-md-10 form">
+                      <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                      <a href="#" class="btn btn-default btn-block my-btn">
+                        SEND IT NOW
+                      </a>
+                    </div>
+                  </div> <!-- End Inner Row -->
+                </div> <!-- End Form Wrapper -->
+
+              <div class="space"></div>
+              <div class="clearfix"></div>
+              </div> <!--- End Text Wrapper-->
+            
+            </div><!--- End Content Wrapper-->
+          </div> <!-- End Right Content -->
+
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
 
 
       <!-- Navigation Bar -->
       <nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div class="container">
           <div class="pull-left text-left">
-            <span class="logo">IDWEBDesigner</span>
-            <p class="copyright">DESIGNER.WEB.ID</p>
+            <span class="logo">Bloggler</span>
+            <p class="copyright">Copyright@2014</p>
           </div>
-          <div class="pull-right text-right controls">
-            <a href="#homeslider" role="button" data-slide="prev"><span class="fa fa-arrow-left"></span></a>
-            <a href="#homeslider" role="button" data-slide="next"><span class="fa fa-arrow-right"></span></a>
+          <div class="pull-right text-right">
+            <h6>Learn More?</h6>
+            <a href="about-me.html"><span class="contact-link">About Me</span></a>
           </div>
         </div>
       </nav>
 
     </div> <!--- End Fullscreen Page -->
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   
     <!-- Bootstrap Js Compiled Plugins -->
@@ -161,24 +175,31 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 
-    <script type="text/javascript" src="js/backstretch.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
     <script type="text/javascript">
-      //Home Page BG Slideshow
+      //Google Map BG in Contact Page
       //-----------------------------------
-      $.backstretch([
-            "img/bg/04.jpg"
-          , "img/bg/02.jpg"
-          , "img/bg/03.jpg"
-        ], {duration: 3000, fade: 750});
+        function initialize() {
+          var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            center: new google.maps.LatLng(10.731688,122.5505356),
+            zoom: 15
+          });
+
+          map.setOptions({draggable: true, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+          var infowindow = new google.maps.InfoWindow();
+          var service = new google.maps.places.PlacesService(map);
+          
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
-    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
   </body>
 
-<!-- Mirrored from themeforces.com/demo/html/bloggler/ by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 02 Dec 2014 23:23:21 GMT -->
+<!-- Mirrored from themeforces.com/demo/html/bloggler/contact.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 02 Dec 2014 23:25:22 GMT -->
 </html>
