@@ -215,6 +215,7 @@ ul.social-links li a:hover { transform: scale(1.5) }
 }
 .navmenu,
 .navbar-offcanvas {
+    background: url(../img/bg/farid2.jpg);
     width: 230px;
     height: auto;
     border-width: 0px;
@@ -235,7 +236,7 @@ ul.navmenu-nav li:hover {
     color: #e8e8e8 !important;
     display: block;
     font-size: 14px;
-    text-transform: uppercase;
+
     letter-spacing: 4px;
     line-height: 20px;
     padding: 10px 15px;
@@ -249,7 +250,7 @@ ul.navmenu-nav li:hover {
 .nav > li {
     position: relative;
     display: block;
-    border-bottom: 1px solid #333333;
+    border-bottom: 0px solid #333333;
 }
 ul.social-media li,
 ul.social-media li>a {
