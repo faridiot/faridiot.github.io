@@ -107,7 +107,6 @@ span.logo {
     overflow: hidden;
 }
 #sidebar.blog {
-    font-family: 'Times New Roman', Times;
     background: #3f4446;
     height: 100%;
     min-height: 600px;
@@ -123,6 +122,7 @@ span.logo {
     margin-left: -150px;
 }
 #page-detail {
+    font-family: 'Times New Roman', Times;
     color: #e8e8e8 !important;
     padding-top: 18%;
 }
@@ -213,6 +213,7 @@ ul.social-links li a:hover { transform: scale(1.5) }
     background-position: -200% 30%;
     text-align: center;
     border-color: transparent;
+    font-family: 'Times New Roman', Times;
 }
 .navmenu,
 .navbar-offcanvas {
@@ -751,6 +752,7 @@ span.view-next {
     border-color: transparent;
     overflow: hidden;
     padding: 10px 0;
+    font-family: 'Times New Roman', Times;
 }
 .navbar-fixed-bottom i.fa {
     visibility: hidden;
