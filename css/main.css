@@ -66,10 +66,11 @@ h6 {
     font-size: 12px;
 }
 p {
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 1.5px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
     margin-top: 15px;
+    color: #999999;
 }
 a,
 a:hover { color: #363636 }
@@ -90,6 +91,7 @@ span.logo {
     line-height: 10px;
     margin-bottom: -20px;
     text-transform: capitalize !important;
+    color: #999999;
 }
 /*=======================
        Page Layout
@@ -115,7 +117,7 @@ span.logo {
     overflow: hidden;
 }
 #sidebar .featured-img img {
-    opacity: 0.20;
+    opacity: 0.90;
     height: 100%;
     position: absolute;
     min-height: 600px;
@@ -123,7 +125,7 @@ span.logo {
 }
 #page-detail {
     font-family: 'Times New Roman', Times;
-    color: #e8e8e8 !important;
+    color: #999999 !important;
     padding-top: 18%;
 }
 #page-detail hr {
@@ -155,12 +157,12 @@ ul.tags li:last-child:after { content: '' }
 ul.social-links li,
 ul.social-links li a {
     display: inline-block;
-    font-size: 16px;
+    
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 18px;
     font-weight: 400;
-    color: #e8e8e8 !important;
+    color: #999999 !important;
     transition: all .2s ease-in-out;
 }
 ul.social-links li { padding: 5px 15px 0px 0px }
@@ -217,7 +219,7 @@ ul.social-links li a:hover { transform: scale(1.5) }
 }
 .navmenu,
 .navbar-offcanvas {
-    background: url(../img/bg/farid2small.jpg);
+    background: url(../img/bg/wall.jpg);
     width: 230px;
     height: auto;
     border-width: 0px;
@@ -305,8 +307,8 @@ ul.social-media {
 }
 #slider1 #page-detail.text-center { padding-top: 2% }
 #right { height: 100% }
-#sidebar + .container #menu { color: #fff }
-#sidebar + .container #menu:hover { color: #999 }
+#sidebar + .container #menu { color: #999999 }
+#sidebar + .container #menu:hover { color: #666666 }
 /*=======================
     Main Blog Page
 =======================*/
