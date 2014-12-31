@@ -45,7 +45,7 @@ html, body {
 
 
 
-h1{font-family:'adelle-sans',Arial,sans-serif; font-size:45px; color:#333333; text-decoration:none; margin:0 0 20px 0; font-weight:bold; line-height:100%; text-transform:uppercase;}
+h1{font-family:'adelle-sans',Arial,sans-serif; font-size:45px; color:#333333; text-decoration:none; margin:0 0 20px 0; font-weight:bold; line-height:100%; text-transform: none;}
 
 
 .content-right-info span{font-family:'Roboto',Arial,sans-serif; font-size:30px; font-weight:300; color:#666666; text-decoration:none; margin:0 0 28px 0; display:inline-block; line-height:40px;}
@@ -351,7 +351,7 @@ footer.home{ display:block;}
 
 
 footer{ width:100%; margin:0 auto; position:fixed; bottom:50px;  z-index:5;}
-footer.inner{ width:100%; padding:27px 0 0 0; bottom:0;  position:relative;   z-index:5; background:#fff; float:left; }
+footer.inner{ width:100%; padding:27px 0 0 0; bottom:0;  position:fixed;   z-index:5; background:#fff; float:left; }
 .fot-cont{ width:100%; padding:0 0 27px 0;  position:relative; float:left; }
 
 #copyright{ width:61%; float:left; margin:5px 0 0 50px; color:#ffffff; font-family:'adelle-sans',Arial,sans-serif; font-size:12px; text-decoration:none;}
